@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+<section class="signup-section">
+<h1 class="signup-title">Signup</h1>
+
+<form id="signup" class="signup-form" action="process-signup.php" method="post" novalidate>
+
+<div class="signup-div">
+<label for="fname">First name</label>
+<input type="text" id="fname" name="fname">
+</div>
+
+<div class="signup-div">
+<label for="sname">Surname</label>
+<input type="text" id="sname" name="sname">
+</div>
+
+<div class="signup-div">
+<label for="username">Username</label>
+<input type="text" id="username" name="username">
+</div>
+
+<div class="signup-div">
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
+</div>
+
+<div class="signup-div">
+<label for="password">Password</label>
+<input type="password" id="password" name="password">
+</div>
+
+<div class="signup-div">
+<label for="password_conf">Repeat password</label>
+<input type="password" id="password_conf" name="password_conf">
+</div>
+
+<button class="signup-btn" type="submit" id="btnSubmit" name="btnSubmit">Sign up</button>
+</form>
+
+</section>
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script src="../javascript/validation.js" ></script>
+</body>
+</html>
